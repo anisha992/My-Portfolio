@@ -3,58 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anisha Parveen - Portfolio</title>
+    <title>Anisha Parveen</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>I am Anisha Parveen.</h1>
-        <p>Bridging Code & Creativity in Web Development</p>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Anisha<span>Parveen</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#work">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a Computer Science student specializing in Cloud Computing and Virtualization Technology.  
-            I have experience in cloud computing, and containerization,  
-            working with technologies like AWS, Docker, Kubernetes, C++, and Java.  
-        </p>
-        <p>
-            Passionate about building scalable applications and optimizing backend performance,  
-            I enjoy working on projects that combine technology and creativity.
-        </p>
-    </section>
-    
-
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project-container">
-            <div class="project"><img src="images/project1.png" alt="Scribe"><h3>Dockerized Streamlit Development Environment 🎨</h3></div>
-            <div class="project"><img src="images/project2.jpg" alt="SkillSetGo"><h3>MySQL Docker Setup 🐬</h3></div>
-            <div class="project"><img src="images/project3.png" alt="Project 3"><h3>Titanic Survival Predictor - Containerized Streamlit App 🚢</h3></div>
-            <div class="project"><img src="images/project4.png" alt="Project 4"><h3>Docker Volume Persistence - Bind Mounts with Linux Containers 📁</h3></div>
-            <div class="project"><img src="images/project5.jpg" alt="Project 5"><h3>Docker Bridge Networking 🔗</h3></div>
-            <div class="project"><img src="images/project6.png" alt="Project 6"><h3>Streamlit PostgreSQL Docker 🗄️</h3></div>
-            <div class="project"><img src="images/project7.png" alt="Project 7"><h3>Evidently Monitoring Docker 📊</h3></div>
-            <div class="project"><img src="images/project8.png" alt="Project 8"><h3>Minikube Docker on Windows 🏗️</h3></div>
-            <div class="project"><img src="images/project9.png" alt="Project 9"><h3>Orchestrate Microservices with Minikube Kubernetes ☸️</h3></div>
-            <div class="project"><img src="images/project10.png" alt="Project 10"><h3>Orchestrate Microservices with Docker Swarm ⚓</h3></div>
-            <div class="project"><img src="images/project11.png" alt="Project 11"><h3>Streamlit App on AWS EC2 ☁️</h3></div>
-            <div class="project"><img src="images/project12.webp" alt="Project 12"><h3>Docker Bakery Foundation 🍞</h3></div>
-            <!-- <div class="project"><img src="images/project13.jpg" alt="Project 13"><h3>Project 13</h3></div> -->
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="container">
+            <div class="home-content">
+                <h1>Hi, I'm <span>Anisha Parveen</span></h1>
+                <!-- <p class="subtitle">Cloud Computing Specialist | Backend Developer | DevOps Engineer</p> -->
+                <p>I build scalable cloud solutions and automate infrastructure for optimal performance.</p>
+            </div>
+            <div class="home-image">
+                <img src="img/profile.jpg" alt="Anisha Parveen">
+            </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: anishaparveen9927@gmail.com</p>
+   <!-- Skills Section -->
+   <section id="skills" class="skills">
+    <div class="container">
+        <h2 class="section-title">Technical <span>Skills</span></h2>
+        <p class="section-subtitle">Technologies I work with</p>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3><i class="fas fa-cloud"></i> Programming Languages</h3>
+                <div class="skill-tags">
+                    <span>C++</span>
+                    <span>Java</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-cloud"></i> Cloud Technologies</h3>
+                <div class="skill-tags">
+                    <span>AWS</span>
+                    <span>Google Cloud</span>
+                    <span>Azure</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3><i class="fas fa-server"></i> DevOps</h3>
+                <div class="skill-tags">
+                    <span>Docker</span>
+                    <span>Kubernetes</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Backend Development</h3>
+                <div class="skill-tags">
+                    <span>Node.js</span>
+                    <span>Python</span>
+                    <span>MongoDB</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3><i class="fas fa-globe"></i> Web Technologies</h3>
+                <div class="skill-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Work Section -->
+    <section id="work" class="work">
+        <div class="container">
+            <h2 class="section-title">Featured <span>Projects</span></h2>
+            <p class="section-subtitle">Some of my recent work</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/project1.avif" alt="Dock-It-Up">
+                    </div>
+                    <div class="project-content">
+                        <h3>Dock-It-Up</h3>
+                        <p>A series of containerized solutions leveraging Docker to streamline application deployment, enhance scalability, and optimize resource management..</p>
+                        <div class="project-buttons">
+                            <a href="https://github.com/anisha992/Dock-It-Up" class="project-button code-button">View Code</a>
+                            <!-- <a href="#" class="project-button demo-button">Live Demo</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/project2.png" alt="Cloud Task Manager">
+                    </div>
+                    <div class="project-content">
+                        <h3>InsightML</h3>
+                        <p>A Streamlit-based ML application that facilitates model training, predictions, and interpretability with tools like Evidently AI and SHAP.</p>
+                        <div class="project-buttons">
+                            <a href="https://github.com/anisha992/InsightML" class="project-button code-button">View Code</a>
+                            <a href="#" class="project-button demo-button">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/project3.png" alt="Streamlit Dashboard">
+                    </div>
+                    <div class="project-content">
+                        <h3>Streamlit Dashboard</h3>
+                        <p>This engaging Streamlit web app offers an intuitive platform for efficient data exploration and visualization.</p>
+                        <div class="project-buttons">
+                            <a href="https://github.com/anisha992/Streamlit-Dashboard" class="project-button code-button">View Code</a>
+                            <a href="#" class="project-button demo-button">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/project4.png" alt="Titanic Survival Prediction">
+                    </div>
+                    <div class="project-content">
+                        <h3>Titanic Survival Prediction</h3>
+                        <p>A machine learning model built with Python and scikit-learn to predict survival probabilities on the Titanic.</p>
+                        <div class="project-buttons">
+                            <a href="https://github.com/anisha992/Titanic-Survival-Prediction" class="project-button code-button">View Code</a>
+                            <a href="#" class="project-button demo-button">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/project5.png" alt="Binary Classification Web App">
+                    </div>
+                    <div class="project-content">
+                        <h3>Binary Classification Web App</h3>
+                        <p>A Streamlit-based machine learning web app that classifies mushrooms as edible or poisonous.</p>
+                        <div class="project-buttons">
+                            <a href="https://github.com/anisha992/Binary-Classification-Web-App" class="project-button code-button">View Code</a>
+                            <a href="#" class="project-button demo-button">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <p class="section-subtitle">Feel free to reach out for collaborations or opportunities</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>anishaparveen9927@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Uttarakhand, India</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/anisha-parveen-5b1657284/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/anisha992" target="_blank"><i class="fab fa-github"></i></a>
+                        <!-- <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a> -->
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Anisha Parveen. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>

@@ -1,0 +1,88 @@
+// Variables
+$primary-color: #3498db;
+$primary-dark: #2980b9;
+$secondary-color: #f8f9fa;
+$text-color: #333;
+$light-text: #777;
+$white: #fff;
+$black: #000;
+$border-radius: 8px;
+$box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+$transition: all 0.3s ease;
+
+// Mixins
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin section-padding {
+    padding: 80px 0;
+    
+    @media (max-width: 576px) {
+        padding: 60px 0;
+    }
+}
+
+// Animations
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease forwards;
+}
+
+// Additional Styles
+.skill-card {
+    position: relative;
+    overflow: hidden;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, rgba($primary-color, 0.1) 0%, rgba($white, 0) 100%);
+        z-index: 1;
+        opacity: 0;
+        transition: $transition;
+    }
+    
+    &:hover::after {
+        opacity: 1;
+    }
+}
+
+.project-card {
+    position: relative;
+    
+    .project-info {
+        position: relative;
+        z-index: 2;
+        background: $white;
+    }
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba($primary-color, 0.3) 0%, rgba($primary-color, 0.7) 100%);
+        opacity: 0;
+        transition: $transition;
+    }
+    
+    &:hover::before {
+        opacity: 1;
+    }
+}
+
+// Import the compiled CSS
+@import 'styles.css';
