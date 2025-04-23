@@ -16,24 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            const targetId = this.getAttribute('href');
-            if (targetId === '#') return;
-            
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop - 80,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-    
     // Sticky navbar on scroll
     window.addEventListener('scroll', function() {
         const navbar = document.querySelector('.navbar');
@@ -66,17 +48,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Update copyright year
-    document.getElementById('year').textContent = new Date().getFullYear();
-    
-    // Project demo buttons
-    document.querySelectorAll('.project-links .btn').forEach(btn => {
-        btn.addEventListener('click', function(e) {
-            if (this.classList.contains('btn-outline')) {
-                e.preventDefault();
-                alert('This would open the project demo in a new tab.');
-            }
-        });
-    });
+    const yearElement = document.getElementById('year');
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
     
     // Intersection Observer for animations
     const observerOptions = {

@@ -23,6 +23,7 @@ body {
     color: var(--text-color);
     background-color: var(--white);
     overflow-x: hidden;
+    /* Remove any overflow-y restrictions that might be related to snap scrolling */
 }
 
 .container {
@@ -140,9 +141,7 @@ section {
 /* Home Section */
 .home {
     padding-top: 120px;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+    padding-bottom: 80px; /* Add padding at bottom */
 }
 
 .home .container {
@@ -192,6 +191,18 @@ section {
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
 }
+
+.page-content {
+    padding-top: 100px; /* To account for fixed navigation */
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section:not(.home) {
+    margin-top: 20px;
+}
+
 /* About */
 #about {
     background-color: #f9f9f9;
@@ -199,11 +210,11 @@ section {
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
-    max-width: 900px;
+    max-width: 100%; /* Changed from 900px to be more responsive */
     display: flex;
-    align-items: center; /* Ensures proper vertical alignment */
+    align-items: center;
     gap: 40px;
-    flex-wrap: wrap; /* Ensures responsiveness */
+    flex-wrap: wrap;
 }
 
 .about-image {
@@ -246,19 +257,13 @@ section {
     #about {
         flex-direction: column;
         text-align: center;
-        padding: 40px;
+        padding: 30px;
+        gap: 30px;
     }
 
     .about-image img {
-        width: 400px;  /* Increased from 190px */
-        height: 400px; /* Increased from 190px */
-        border-radius: 50%;
-        object-fit: cover;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .about-content {
-        max-width: 100%;
+        width: 280px;  /* Reduced size for mobile */
+        height: 280px; /* Reduced size for mobile */
     }
 }
 
